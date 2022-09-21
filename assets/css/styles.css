@@ -3,19 +3,20 @@
 .accordion {
   display: grid;
   align-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .accordion__container {
   display: grid;
   row-gap: 0.75rem;
   padding: 2rem 1rem;
-  background-color: var(--container-color-accordian);
+  /* margin-top: -25rem; */
+  background-color: rgb(0, 0, 0);
   border-radius: 0.5rem;
   box-shadow: 0 12px 32px hsla(0deg, 0%, 20%, 0.001);
 }
 .accordion__title {
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: rgb(27, 27, 27);
   font-weight: 400;
   margin-top: 0.15rem;
   transition: 0.2s;
@@ -36,7 +37,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  color: var(--title-color);
+  color: rgb(27, 27, 27);
   transition: 0.3s;
 }
 .accordion__item {
@@ -80,7 +81,7 @@
 .accordion__item:nth-child(4)::after {
   background-color: rgb(138, 255, 255);
 }
-.accordion__item__content {
+.accordion__content {
   overflow: hidden;
   height: 0;
   transition: all 0.25s ease;

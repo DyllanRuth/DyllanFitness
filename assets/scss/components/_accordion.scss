@@ -14,7 +14,7 @@
 
     &__title{
         font-size: var(--small-font-size);
-        color: var(--title-color);
+        color: rgb(27, 27, 27);
         font-weight: 400;
         margin-top: .15rem;
         transition: .2s;
@@ -35,7 +35,7 @@
     &__icon{
         font-size: 1.5rem;
         height: max-content;
-        color: var(--title-color);
+        color: rgb(27, 27, 27);
         transition: .3s;
     }
 
@@ -88,9 +88,7 @@
                 background-color: rgb(138, 255%, 150%);
             }
         }
-
     }
-
         &__content{
             overflow: hidden;
             height: 0;
