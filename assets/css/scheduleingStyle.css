@@ -1,5 +1,11 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
+.home__title__scheduler {
+  text-align: center;
+}
+.scheduler {
+  margin-bottom: -3rem;
+}
 .accordion {
   display: grid;
   align-content: center;
@@ -15,7 +21,7 @@
   box-shadow: 0 12px 32px hsla(0deg, 0%, 20%, 0.001);
 }
 .accordion__title {
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
   color: rgb(27, 27, 27);
   font-weight: 400;
   margin-top: 0.15rem;
@@ -30,7 +36,7 @@
 }
 .accordion__description {
   padding: 0 1.25rem 1.25rem 3rem;
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
 }
 .accordion__icon {
   font-size: 1.5rem;
@@ -759,7 +765,7 @@ img {
   background-color: var(--first-color);
   border-radius: 50%;
   font-size: 2rem;
-  color: var(--title-color-black);
+  color: snow;
   transition: background 0.4s;
 }
 .footer__social-link:hover {
