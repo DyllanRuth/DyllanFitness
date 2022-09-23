@@ -179,12 +179,6 @@
                                     <h1 class="section__title">AB FITNESS?</h1>
                                 </div>
                             </div>
-                            
-                            <!-- <p class="choose__description">
-                                Choose your favorite class and start now. Remember the 
-                                only bad workout is the one you didn't do. 
-                            </p> -->
-    
 
                             <div class="accordion container">
                                 <div class="accordion__container">
@@ -244,15 +238,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                
-                            
-                            
+                            </div> 
                     </div>
     
                         <div class="choose__images">
                             <img src="assets/img/Component 2 (1).png" alt="choose image" class="choose__img">
-    
+
                             <div class="choose__triangle choose__triangle-1"></div>
                             <div class="choose__triangle choose__triangle-2"></div>
                             <div class="choose__triangle choose__triangle-3"></div>
@@ -331,18 +322,17 @@
                                     <i class="ri-checkbox-circle-line"></i> <b>Meal planning</b>
                                 </li>
                             </ul>
-                            <button id="checkout">checkout</button>
 
-                            <a href="" class="button button__flex pricing__button" id="Premium">
+                            <a class="button button__flex pricing__button" id="Premium">
                                 Purchase Now <i class="ri-arrow-right-line"></i>
                             </a>
-                            <!-- https://buy.stripe.com/test_3csg0zbYEaLp11K4gg -->
+
                             <script>
                                 var stripe = Stripe(
                                     "pk_test_51Ll4ZkHVh6JT6WNNftPe49pbzoXwwdDWgPgxbh8CivcPjn3gR8pterFy5pqPuc4by7K2QjzVXy1RRiH2rXdTCeYB00wKV5EZ7i"
                                 );
 
-                                document.getElementById("checkout").addEventListener("click", function(){
+                                document.getElementById("Premium").addEventListener("click", function(){
                                     stripe.redirectToCheckout({
                                         lineItems: [
                                             {
@@ -358,8 +348,6 @@
                                     });
                                 })
                             </script>
-
-
                         </article>
 
                         <article class="pricing__card">
@@ -389,7 +377,7 @@
                                 </li>
                             </ul>
 
-                            <a href="#" class="button button__flex pricing__button">
+                            <a href="https://www.instagram.com/a.asante_/" class="button button__flex pricing__button">
                                 Contact Now <i class="ri-arrow-right-line"></i>
                             </a>
                         </article>

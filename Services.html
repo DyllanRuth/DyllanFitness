@@ -9,6 +9,9 @@
 
         <!--=============== REMIXICON ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== STRIPE ===============-->
+        <script src="https://js.stripe.com/v3/"></script>
 
         <!--=============== BOXICON ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -128,9 +131,31 @@
                                 </li>
                             </ul>
 
-                            <a href="#" class="button button__flex pricing__button">
+                            <a  class="button button__flex pricing__button" id="Premium">
                                 Purchase Now <i class="ri-arrow-right-line"></i>
                             </a>
+
+                            <script>
+                                var stripe = Stripe(
+                                    "pk_test_51Ll4ZkHVh6JT6WNNftPe49pbzoXwwdDWgPgxbh8CivcPjn3gR8pterFy5pqPuc4by7K2QjzVXy1RRiH2rXdTCeYB00wKV5EZ7i"
+                                );
+
+                                document.getElementById("Premium").addEventListener("click", function(){
+                                    stripe.redirectToCheckout({
+                                        lineItems: [
+                                            {
+                                                price: "price_1Ll4qqHVh6JT6WNNDijF8XUW",
+                                                quantity: 1,
+                                            },
+                                        ],
+                                        mode: "payment",
+                                        successUrl: "https://abfit.netlify.app/successfulpayment",
+                                        cancelUrl: "https://abfit.netlify.app/services",
+                                    }).then(function(result){
+
+                                    });
+                                })
+                            </script>
                         </article>
 
                         <article class="pricing__card">
@@ -171,45 +196,6 @@
                 </div>
             </section>
 
-            <!--==================== CALCULATE 
-
-            <section class="calculate section">
-                <div class="calculate__container container grid">
-                    <div class="calculate__content">
-                        <div class="section__titles">
-                            <h1 class="section__title-border">CALCULATE</h1>
-                            <h1 class="section__title">YOUR BMI</h1>
-                        </div>
-
-                        <p class="calculate__description">
-                            The body mass index (BMI) calculator calculates 
-                            body mass index from your weight and height.
-                        </p>
-
-                        <form action="" class="calculate__form" id="calculate-form">
-                            <div class="calculate__box">
-                                <input type="number" placeholder="Height" class="calculate__input" id="calculate-cm">
-                                <label for="" class="calculate__label">cm</label>
-                            </div>
-                            <div class="calculate__box">
-                                <input type="number" placeholder="Weight" class="calculate__input" id="calculate-kg">
-                                <label for="" class="calculate__label">kg</label>
-                            </div>
-     
-                            <button type="submit" class="button button__flex">
-                                Calculate Now <i class="ri-arrow-right-line"></i>
-                            </button>
-                        </form>
-
-                        <p class="calculate__message" id="calculate-message"></p>
-                    </div>
-                    <img src="assets/img/calculate-img.png" alt="calculate image" class="calculate__img">
-                </div>
-            </section>
-        </main>
-
-        ====================-->
-
         <!--==================== FOOTER ====================-->
         <footer class="footer section" id="footer">
             <div class="footer__container container grid">
@@ -239,7 +225,6 @@
                 </div>
             </div>
         </footer>
-
 
         <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up"> 
