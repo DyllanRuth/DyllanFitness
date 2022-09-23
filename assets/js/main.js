@@ -74,7 +74,7 @@ window.addEventListener('scroll', scrollUp)
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
+    distance: '30px',
     duration: 1500,
     delay: 10,
 })
@@ -137,7 +137,7 @@ const sendEmail = (e) =>{
         }, 3000);
     }else{
         // serviceID - templateID - #form - publicKey
-        emailjs.sendForm('', '', '#contact-form', '')
+        emailjs.sendForm('service_553acoj', 'template_wqovjkd', '#contact-form', '4zFK3wNMFR0NAsQ_s')
             .then(() => {
                 // Show message and add color
                 contactMessage.classList.add('color-green')

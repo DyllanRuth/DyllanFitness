@@ -10,6 +10,9 @@
         <!--=============== REMIXICON ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+        <!--=============== STRIPE ===============-->
+        <script src="https://js.stripe.com/v3/"></script>
+
         <!--=============== BOXICON ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -328,10 +331,35 @@
                                     <i class="ri-checkbox-circle-line"></i> <b>Meal planning</b>
                                 </li>
                             </ul>
+                            <button id="checkout">checkout</button>
 
-                            <a href="#" class="button button__flex pricing__button">
+                            <a href="" class="button button__flex pricing__button" id="Premium">
                                 Purchase Now <i class="ri-arrow-right-line"></i>
                             </a>
+                            <!-- https://buy.stripe.com/test_3csg0zbYEaLp11K4gg -->
+                            <script>
+                                var stripe = Stripe(
+                                    "pk_test_51Ll4ZkHVh6JT6WNNftPe49pbzoXwwdDWgPgxbh8CivcPjn3gR8pterFy5pqPuc4by7K2QjzVXy1RRiH2rXdTCeYB00wKV5EZ7i"
+                                );
+
+                                document.getElementById("checkout").addEventListener("click", function(){
+                                    stripe.redirectToCheckout({
+                                        lineItems: [
+                                            {
+                                                price: "price_1Ll4qqHVh6JT6WNNDijF8XUW",
+                                                quantity: 1,
+                                            },
+                                        ],
+                                        mode: "payment",
+                                        successUrl: "https://abfit.netlify.app/successfulpayment",
+                                        cancelUrl: "https://abfit.netlify.app/services",
+                                    }).then(function(result){
+
+                                    });
+                                })
+                            </script>
+
+
                         </article>
 
                         <article class="pricing__card">
@@ -422,13 +450,13 @@
 
                         <ul class="footer__links">
                             <li>
-                                <a href="#pricing" class="footer__link">Basic</a>
+                                <a href="#pricing" class="footer__link">Personal Session</a>
                             </li>
                             <li>
-                                <a href="#pricing" class="footer__link">Premium</a>
+                                <a href="#pricing" class="footer__link">Premium Package</a>
                             </li>
                             <li>
-                                <a href="#pricing" class="footer__link">Diamond</a>
+                                <a href="#pricing" class="footer__link">Group Session</a>
                             </li>
                         </ul>
                     </div>
@@ -453,9 +481,6 @@
             <div class="container">
                 <div class="footer__group">
                     <ul class="footer__social">
-                        <!-- <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-facebook-circle-fill"></i>
-                        </a> -->
                         <a href="https://twitter.com/EmpressAsante" target="_blank" class="footer__social-link">
                             <i class="ri-twitter-fill"></i>
                         </a>
