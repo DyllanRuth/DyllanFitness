@@ -70,16 +70,16 @@
   background-color: hsl(139deg, 100%, 77%);
 }
 .accordion__item:nth-child(3) {
-  background-color: rgb(255, 240, 240);
+  background-color: hsl(59deg, 100%, 97%);
 }
 .accordion__item:nth-child(3)::after {
-  background-color: rgb(255, 83, 83);
+  background-color: hsl(59deg, 100%, 77%);
 }
 .accordion__item:nth-child(4) {
-  background-color: hsl(138deg, 100%, 97%);
+  background-color: hsl(139deg, 100%, 97%);
 }
 .accordion__item:nth-child(4)::after {
-  background-color: rgb(138, 255, 255);
+  background-color: hsl(139deg, 100%, 77%);
 }
 .accordion__content {
   overflow: hidden;
