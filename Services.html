@@ -1,205 +1,207 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-         <link rel="shortcut icon"  href="assets/img/favicon-32x32.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== REMIXICON ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== STRIPE ===============-->
-        <script src="https://js.stripe.com/v3/"></script>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
 
-        <!--=============== BOXICON ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== STRIPE ===============-->
+    <script src="https://js.stripe.com/v3/"></script>
 
-        <title>DyllanFitness</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                     <img src="assets/img/favicon-32x32.png" alt="logo">DyllanFitness
-                </a>
+    <!--=============== BOXICON ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="index.html" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link active-link">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="AboutMe.html" class="nav__link">About</a>
-                        </li>
-                        <div class="nav__link">
-                            <a href="#" class="button nav__button">Schedule Now</a>
-                        </div>
-                    </ul>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
+    <title>DyllanFitness</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/favicon-32x32.png" alt="logo">DyllanFitness
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="AboutMe.html" class="nav__link">About</a>
+                    </li>
+                    <div class="nav__link">
+                        <a href="#" class="button nav__button">Schedule Now</a>
+                    </div>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+        <!--==================== PRICING ====================-->
+        <section class="pricing section" id="pricing">
+            <div class="container">
+                <div class="section__data">
+                    <h2 class="section__subtitle">Pricing</h2>
+                    <div class="section__titles">
+                        <h1 class="section__title-border">MY SERVICES</h1>
+                        <h1 class="section__title">SPECIAL PLAN</h1>
                     </div>
                 </div>
 
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
+                <div class="pricing__container grid">
+
+                    <article class="pricing__card">
+                        <header class="pricing__header">
+                            <div class="pricing__shape">
+                                <img src="assets/img/pricing3.png" alt="pricing image" class="pricing__img">
+                            </div>
+                            <h1 class="pricing__title">CONSULTATION</h1>
+                            <h2 class="pricing__number">$10</h2>
+                        </header>
+
+                        <ul class="pricing__list">
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> 30min Consultation
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Discuss Fitness Goals
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Make a Weekly Plan
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                ⠀
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                ⠀
+                            </li>
+                        </ul>
+
+                        <a href="Consultation.html" class="button button__flex pricing__button">
+                            Schedule Now <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing__card">
+                        <header class="pricing__header">
+                            <div class="pricing__shape">
+                                <img src="assets/img/pricing1.png" alt="pricing image" class="pricing__img">
+                            </div>
+                            <h1 class="pricing__title">PERSONAL SESSION</h1>
+                            <h2 class="pricing__number">$25</h2>
+                        </header>
+
+                        <ul class="pricing__list">
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> Consultation
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> 1 hr Session
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                <i class="ri-checkbox-circle-line"></i> Muscle Stretching
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                <i class="ri-checkbox-circle-line"></i> Access to Videos
+                            </li>
+                            <li class="pricing__item pricing__item-opacity">
+                                <i class="ri-checkbox-circle-line"></i> Meal planning
+                            </li>
+                        </ul>
+
+                        <a href="Scheduling.html" class="button button__flex pricing__button">
+                            Schedule Now <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="pricing__card pricing__card-active">
+                        <header class="pricing__header">
+                            <div class="pricing__shape">
+                                <img src="assets/img/pricing2.png" alt="pricing image" class="pricing__img">
+                            </div>
+                            <h1 class="pricing__title">PREMIUM PACKAGE</h1>
+                            <h2 class="pricing__number">$140</h2>
+                        </header>
+
+                        <ul class="pricing__list">
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> <b>Consultation</b>
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> <b>1 hr Session x 8</b>
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> <b>Muscle Strectching</b>
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> <b>Access to Videos</b>
+                            </li>
+                            <li class="pricing__item">
+                                <i class="ri-checkbox-circle-line"></i> <b>Meal planning</b>
+                            </li>
+                        </ul>
+
+                        <a class="button button__flex pricing__button" id="Premium">
+                            Purchase Now <i class="ri-arrow-right-line"></i>
+                        </a>
+
+                        <script>
+                            var stripe = Stripe(
+                                "pk_test_51Ll4ZkHVh6JT6WNNftPe49pbzoXwwdDWgPgxbh8CivcPjn3gR8pterFy5pqPuc4by7K2QjzVXy1RRiH2rXdTCeYB00wKV5EZ7i"
+                            );
+
+                            document.getElementById("Premium").addEventListener("click", function () {
+                                stripe.redirectToCheckout({
+                                    lineItems: [
+                                        {
+                                            price: "price_1Ll4qqHVh6JT6WNNDijF8XUW",
+                                            quantity: 1,
+                                        },
+                                    ],
+                                    mode: "payment",
+                                    successUrl: "https://dyllanfitness.netlify.app/successfulpayment",
+                                    cancelUrl: "https://dyllanfitness.netlify.app/services",
+                                }).then(function (result) {
+
+                                });
+                            })
+                        </script>
+                    </article>
+
                 </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-
-            <!--==================== PRICING ====================-->
-            <section class="pricing section" id="pricing">
-                <div class="container">
-                    <div class="section__data">
-                        <h2 class="section__subtitle">Pricing</h2>
-                        <div class="section__titles">
-                            <h1 class="section__title-border">MY SERVICES</h1>
-                            <h1 class="section__title">SPECIAL PLAN</h1>
-                        </div>
-                    </div>
-                    
-                    <div class="pricing__container grid">
-
-                        <article class="pricing__card">
-                            <header class="pricing__header">
-                                <div class="pricing__shape">
-                                    <img src="assets/img/pricing1.png" alt="pricing image" class="pricing__img">
-                                </div>
-                                <h1 class="pricing__title">PERSONAL SESSION</h1>
-                                <h2 class="pricing__number">$25</h2>
-                            </header>
-
-                            <ul class="pricing__list">
-                                <li class="pricing__item">
-                                    <i class="ri-checkbox-circle-line"></i> Consultation
-                                </li>
-                                <li class="pricing__item">
-                                    <i class="ri-checkbox-circle-line"></i> 1 hr Session
-                                </li>
-                                <li class="pricing__item pricing__item-opacity">
-                                    <i class="ri-checkbox-circle-line"></i> Muscle Stretching
-                                </li>
-                                <li class="pricing__item pricing__item-opacity">
-                                    <i class="ri-checkbox-circle-line"></i> Access to Videos
-                                </li>
-                                <li class="pricing__item pricing__item-opacity">
-                                    <i class="ri-checkbox-circle-line"></i> Meal planning
-                                </li>
-                            </ul>
-
-                            <a href="Scheduling.html" class="button button__flex pricing__button">
-                                Schedule Now <i class="ri-arrow-right-line"></i>
-                            </a>
-                        </article>
-
-                        <article class="pricing__card">
-                            <header class="pricing__header">
-                                <div class="pricing__shape">
-                                    <img src="assets/img/pricing3.png" alt="pricing image" class="pricing__img">
-                                </div>
-                                <h1 class="pricing__title">CONSULTATION</h1>
-                                <h2 class="pricing__number">$10</h2>
-                            </header>
-
-                            <ul class="pricing__list">
-                                <li class="pricing__item">
-                                    <i class="ri-checkbox-circle-line"></i> Discuss Fitness Goals
-                                </li>
-                                <li class="pricing__item">
-                                    <i class="ri-checkbox-circle-line"></i> Make a Weekly Plan
-                                </li>
-                                <li class="pricing__item pricing__item-opacity">
-                                    ⠀
-                                </li>
-                                <li class="pricing__item pricing__item-opacity">
-                                    ⠀
-                                </li>
-                                <li class="pricing__item pricing__item-opacity">
-                                    ⠀
-                                </li>
-                            </ul>
-
-                            <a href="Consultation.html" class="button button__flex pricing__button">
-                                Schedule Now <i class="ri-arrow-right-line"></i>
-                            </a>
-                        </article>
-
-                        <article class="pricing__card pricing__card-active">
-                            <header class="pricing__header">
-                                <div class="pricing__shape">
-                                    <img src="assets/img/pricing2.png" alt="pricing image" class="pricing__img">
-                                </div>
-                                <h1 class="pricing__title">PREMIUM PACKAGE</h1>
-                                <h2 class="pricing__number">$140</h2>
-                            </header>
-
-                            <ul class="pricing__list">
-                                <li class="pricing__item">
-                                    <i class="ri-checkbox-circle-line"></i> <b>Consultation</b>
-                                </li>
-                                <li class="pricing__item">
-                                    <i class="ri-checkbox-circle-line"></i> <b>1 hr Session x 8</b>
-                                </li>
-                                <li class="pricing__item">
-                                    <i class="ri-checkbox-circle-line"></i> <b>Muscle Strectching</b>
-                                </li>
-                                <li class="pricing__item">
-                                    <i class="ri-checkbox-circle-line"></i> <b>Access to Videos</b>
-                                </li>
-                                <li class="pricing__item">
-                                    <i class="ri-checkbox-circle-line"></i> <b>Meal planning</b>
-                                </li>
-                            </ul>
-
-                            <a  class="button button__flex pricing__button" id="Premium">
-                                Purchase Now <i class="ri-arrow-right-line"></i>
-                            </a>
-
-                            <script>
-                                var stripe = Stripe(
-                                    "pk_test_51Ll4ZkHVh6JT6WNNftPe49pbzoXwwdDWgPgxbh8CivcPjn3gR8pterFy5pqPuc4by7K2QjzVXy1RRiH2rXdTCeYB00wKV5EZ7i"
-                                );
-
-                                document.getElementById("Premium").addEventListener("click", function(){
-                                    stripe.redirectToCheckout({
-                                        lineItems: [
-                                            {
-                                                price: "price_1Ll4qqHVh6JT6WNNDijF8XUW",
-                                                quantity: 1,
-                                            },
-                                        ],
-                                        mode: "payment",
-                                        successUrl: "https://dyllanfitness.netlify.app/successfulpayment",
-                                        cancelUrl: "https://dyllanfitness.netlify.app/services",
-                                    }).then(function(result){
-
-                                    });
-                                })
-                            </script>
-                        </article>
-
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section" id="footer">
             <div class="footer__container container grid">
                 <div>
-                   
+
                     <p class="footer__message" id="contact-message"></p>
                 </div>
 
@@ -213,7 +215,7 @@
                     <ul class="footer__social">
                         <a href="https://www.instagram.com/dyllanfitness/" target="_blank" class="footer__social-link">
                             <i class="ri-instagram-line"></i>
-                        </a>    
+                        </a>
                     </ul>
                     <span class="footer__copy">
                         &#169; 2022 DyllanFitness. All rights reserved
@@ -223,7 +225,7 @@
         </footer>
 
         <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up"> 
+        <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line"></i>
         </a>
 
@@ -232,8 +234,9 @@
 
         <!--=============== EMAIL JS ===============-->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        
+
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
-    </body>
+</body>
+
 </html>

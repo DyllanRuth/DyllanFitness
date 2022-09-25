@@ -1,95 +1,103 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-         <link rel="shortcut icon"  href="assets/img/favicon-32x32.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== REMIXICON ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
 
-        <!--=============== STRIPE ===============-->
-        <script src="https://js.stripe.com/v3/"></script>
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-        <!--=============== BOXICON ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== STRIPE ===============-->
+    <script src="https://js.stripe.com/v3/"></script>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/aboutme.css">
+    <!--=============== BOXICON ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>DyllanFitness</title>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/aboutme.css">
 
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                     <img src="assets/img/favicon-32x32.png" alt="logo">DyllanFitness
+    <title>DyllanFitness</title>
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/favicon-32x32.png" alt="logo">DyllanFitness
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">About</a>
+                    </li>
+                    <div class="nav__link">
+                        <a href="Services.html" class="button nav__button">Schedule Now</a>
+                    </div>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h2 class="home__subtitle">ABOUT</h2>
+                    <h1 class="home__title">ME</h1>
+
+                    <div class="home__images">
+                        <img src="assets/img/DyllanAboutme.png" alt="home image" class="home__img">
+
+                        <div class="home__triangle home__triangle-3"></div>
+                        <div class="home__triangle home__triangle-2"></div>
+                        <div class="home__triangle home__triangle-1"></div>
+                    </div>
+                </div>
+
+                <p class="home__description">
+                    Dyllan Ruth is a Student attending Prairie View A&M University with experience and a fiery passion
+                    for fitness. Owner of Natural Blendz he is a fitness entrepreneur who is focused on bettering the
+                    community in any way he can. Dyllan has immense popularity not just because of his amazing physique,
+                    but for his character and high standards in representing the black male and fitness community.
+                <h1 class="home__title__description">My Vision</h1>
+                Dyllan's passion for helping others and determination to turn people's dreams into reality has
+                contributed to his pursuit in training on-campus and the starting of his newly brand NaturalBlendz.
+                Dyllan is focused on changing the life of others for the better while gilding them to better habits and
+                a strong mindset.
+
+                </p>
+
+
+
+                <a href="Consultation.html" class="button button__flex">
+                    Let's Meet! <i class="ri-arrow-right-line"></i>
                 </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="index.html" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="Services.html" class="nav__link">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link active-link">About</a>
-                        </li>
-                        <div class="nav__link">
-                            <a href="Services.html" class="button nav__button">Schedule Now</a>
-                        </div>
-                    </ul>
-
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-                </div>
-
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <h2 class="home__subtitle">ABOUT</h2>
-                        <h1 class="home__title">ME</h1>
-
-                        <div class="home__images">
-                            <img src="assets/img/DyllanAboutme.png" alt="home image" class="home__img">
-    
-                            <div class="home__triangle home__triangle-3"></div>
-                            <div class="home__triangle home__triangle-2"></div>
-                            <div class="home__triangle home__triangle-1"></div>
-                        </div>
-                    </div>
-
-                    <p class="home__description">
-                        Dyllan Ruth is a Student attending Prairie View A&M University with experience and a fiery passion for fitness. Owner of Natural Blendz he is a fitness entrepreneur who is focused on bettering the community in any way he can. Dyllan has immense popularity not just because of his amazing physique, but for his character and high standards in representing the black male and fitness community.
-                        <h1 class="home__title__description">My Vision</h1>
-                        Dyllan's passion for helping others and determination to turn people's dreams into reality has contributed to his pursuit in training on-campus and the starting of his newly brand NaturalBlendz. Dyllan is focused on changing the life of others for the better while gilding them to better habits and a strong mindset.
-
-                    </p>
-
-                    
-
-                    <a href="Consultation.html" class="button button__flex">
-                        Let's Meet! <i class="ri-arrow-right-line"></i>
-                    </a>
-                </div>
-            </section>
+            </div>
+        </section>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section" id="footer">
@@ -98,15 +106,17 @@
                     <div>
                         <a href="#" class="footer__logo">
                             <img src="assets/img/favicon-32x32.png" alt="logo"> DyllanFitness
-                        </a>                       
+                        </a>
                     </div>
-                   
+
                     <p class="footer__description">
-                        If you have any questions about my services, please <br> feel free to DM me or submit your contact <br> information and we will be in touch!
+                        If you have any questions about my services, please <br> feel free to DM me or submit your
+                        contact <br> information and we will be in touch!
                     </p>
 
                     <form action="" class="footer__form" id="contact-form">
-                        <input type="email" name="user_email" placeholder="Your Email" class="footer__input" id="contact-user">
+                        <input type="email" name="user_email" placeholder="Your Email" class="footer__input"
+                            id="contact-user">
                         <button type="submit" class="button">
                             Send
                         </button>
@@ -151,7 +161,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <div>
                         <h3 class="footer__title">
                             SOCIAL
@@ -171,7 +181,7 @@
                     <ul class="footer__social">
                         <a href="https://www.instagram.com/dyllanfitness/" target="_blank" class="footer__social-link">
                             <i class="ri-instagram-line"></i>
-                        </a>    
+                        </a>
                     </ul>
                     <span class="footer__copy">
                         &#169; 2022 DyllanFitness. All rights reserved
@@ -182,7 +192,7 @@
 
 
         <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up"> 
+        <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line"></i>
         </a>
 
@@ -191,8 +201,9 @@
 
         <!--=============== EMAIL JS ===============-->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        
+
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
-    </body>
+</body>
+
 </html>
